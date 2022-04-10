@@ -15,6 +15,7 @@ const Header = () => {
             <Link to="./products">Products</Link>
             <Link to="./orders">Orders</Link>
             <Link to="./register">Register</Link>
+            <Link to="./orders">Orders</Link>
             
             <span>{user?.displayName && user.displayName}</span> 
             {
