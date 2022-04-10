@@ -13,9 +13,13 @@ const Header = () => {
            <nav>
            <Link to="./">Home</Link>
             <Link to="./products">Products</Link>
-            <Link to="./orders">Orders</Link>
             <Link to="./register">Register</Link>
             <Link to="./orders">Orders</Link>
+           {
+               user && <>
+                <Link to="./others">Others</Link>
+               </>
+           }
             
             <span>{user?.displayName && user.displayName}</span> 
             {
